@@ -1,0 +1,12 @@
+class Solution {
+public:
+int soln(int n){
+    if(n == 0 || n == 1){
+        return n;
+    }
+    return soln(n-1)+soln(n-2);
+}
+    int fib(int n) {
+        return soln(n);
+    }
+};
