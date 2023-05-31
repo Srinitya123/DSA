@@ -1,0 +1,22 @@
+class Prime{
+public static void main(String args[]){
+
+//input value of n from user
+Scanner sc = new Scanner(System.in);
+
+System.out.println("Enter number to check if it's prime : ",n);
+int n = sc.nextInt();
+int temp=0; //temp variable to count the number of factors
+
+for(i=2; i<=(n-1);i++) //to traverse and check with all numbers from 2 through (n-1)
+{
+if(n%i==0){
+temp=temp+1;    
+}
+}
+if(temp>0)
+System.out.println("Not Prime");
+else
+System.out.println("prime");
+}
+}
