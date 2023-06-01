@@ -1,0 +1,13 @@
+class simpleInterest{
+public static void main(String args[]){
+
+Scanner sc = new Scanner(System.in);
+long p = sc.nextLong();
+long r = sc.nextLong();
+long t = sc.nextLong();
+
+Double SI = (p*r*t)/100;
+System.out.println(p + r + t);
+System.out.println(SI);
+}
+}
